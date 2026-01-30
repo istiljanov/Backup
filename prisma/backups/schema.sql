@@ -37,6 +37,20 @@ COMMENT ON SCHEMA "public" IS 'standard public schema';
 
 
 
+CREATE EXTENSION IF NOT EXISTS "hypopg" WITH SCHEMA "extensions";
+
+
+
+
+
+
+CREATE EXTENSION IF NOT EXISTS "index_advisor" WITH SCHEMA "extensions";
+
+
+
+
+
+
 CREATE EXTENSION IF NOT EXISTS "pg_graphql" WITH SCHEMA "graphql";
 
 
@@ -12388,6 +12402,42 @@ GRANT USAGE ON SCHEMA "public" TO "service_role";
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 GRANT ALL ON TABLE "public"."scraper_tasks" TO "anon";
 GRANT ALL ON TABLE "public"."scraper_tasks" TO "authenticated";
 GRANT ALL ON TABLE "public"."scraper_tasks" TO "service_role";
@@ -13520,6 +13570,12 @@ GRANT ALL ON FUNCTION "public"."update_updated_at_column"() TO "service_role";
 GRANT ALL ON FUNCTION "public"."update_url_scrape_has_phone"() TO "anon";
 GRANT ALL ON FUNCTION "public"."update_url_scrape_has_phone"() TO "authenticated";
 GRANT ALL ON FUNCTION "public"."update_url_scrape_has_phone"() TO "service_role";
+
+
+
+
+
+
 
 
 
